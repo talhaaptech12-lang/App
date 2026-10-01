@@ -1,0 +1,135 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+
+}
+.left-box{
+    width: 60%;
+    display: flex;
+    height: 100vh;
+    padding: 30px;
+}
+/* text box in left */
+.text{
+    display: flex;
+    flex-direction: column;
+    font-family:  Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+
+}
+/* left box heading styling */
+.text>h1{
+    margin-top:16rem;
+    font-size: 3.8rem;
+}
+.text>h1>span{
+    color: #0064E0;
+}
+#fb-logo{
+    width: 100px;
+    margin: 0px;
+}
+/* big image div */
+.left-box> div> img{
+    max-width: 650px;
+}
+
+.right-box{
+    border-left: 1px solid rgb(165, 164, 164);
+    height: 100vh;
+    width: 40%;
+    align-content: center;
+}
+.form{
+    width: 80%;
+    height: 70vh;
+    
+    
+}
+.form>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+  
+}
+/* right box input styling */
+.form > #email> input {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.815);
+}
+.form > #password> input {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.815);
+}
+.login>button{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color:#0064E0;
+    border: none;
+}
+.login>button>a:hover{
+  color:rgba(247, 244, 244, 0.952);
+}
+.login>button>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* forgot button */
+.forgot>button{
+    width: 100%;
+    margin-top: 20px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: black;
+    border: none;
+    background-color: white;
+}
+.forgot>button:hover{
+    background-color:rgba(163, 160, 160, 0.164);
+}
+
+.create>button{
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #0064E0;
+    background-color: white;
+    height: 50px;
+    color: #0064E0;
+
+}
+.create>button:hover{
+    background-color:rgba(163, 160, 160, 0.116);
+}
+.create>button>a{
+    text-decoration: none;
+    color: #0064E0;
+}
+/* meta image styling */
+.meta-img{
+     display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.meta-img>img{
+    width: 70px;
+}

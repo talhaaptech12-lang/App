@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background-color: #F2F4F7;
+    position: relative;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* profile pic styling use everywhere*/
+#profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* left side box in navbar */
+
+.left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+/* FB logo of left side in navbar*/
+
+.left-nav>.fb-logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* input of left side box in navbar */
+
+.left-nav>input {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    padding-left: 40px;
+    background-color: #F0F2F5;
+}
+
+.left-nav>input:focus {
+    border: 1px solid grey;
+    outline: none;
+}
+
+.left-nav>i {
+    position: absolute;
+    left: 70px;
+    color: grey;
+}
+
+/* center navbar buttons box */
+
+.center-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.center-nav>button {
+    border: none;
+    width: 130px;
+    height: 50px;
+    font-size: 25px;
+    background-color: white;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.center-nav>button:hover {
+    background-color: #F0F2F5;
+}
+
+/* right navbar box */
+
+.right-nav {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-nav>button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* styling for notification button */
+.notification {
+    position: relative;
+}
+/* notification in number used p tag */
+.notification>p {
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero Section styling */
+.hero-section {
+    display: flex;
+    padding-top: 60px;
+    position: relative;
+}
+/* left bar box */
+
+.left-bar {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+
+
+}
+
+/* all buttons in left-bar */
+.left-bar>button {
+    border: none;
+    width: 100%;
+    margin: 10px 0px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    background-color: #F2F4F7;
+}
+
+.left-bar>button:hover {
+    background-color: rgba(212, 211, 211, 0.425);
+}
+
+.left-bar>button>img {
+    width: 40px;
+}
+
+.left-bar>button>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* center portion of fb page */
+
+.feeding {
+    flex: 2.5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feeding-head {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 60px;
+    background-color: white;
+
+}
+
+.feeding-head>input {
+    height: 50px;
+    width: 500px;
+    border-radius: 40px;
+    border: none;
+    background-color: #F2F4F7;
+    padding-left: 10px;
+    /* font-weight: bold; */
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.feeding-head>img {
+    width: 60px;
+    /* background-color: red; */
+}
+
+.feeding-head-btn>button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.feeding-head-btn>.camera-btn {
+    color: red;
+
+}
+
+.feeding-head-btn>.photo-btn {
+    color: green;
+}
+
+.feeding-head-btn>.emoji-btn {
+    color: orange;
+}
+
+.feeding-head-btn>button:hover {
+    background-color: rgba(212, 211, 211, 0.425);
+    border-radius: 15px;
+}
+
+/* story cards main div */
+.story-cards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    width: 80%;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* create story card styling */
+
+.create-story-card {
+    width: 120px;
+    height: 170px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* create story card bg image */
+.parent-image>img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.create-story-card>p {
+    text-align: center;
+}
+/* create story card story post button */
+.plus-icon {
+    border: 5px solid white;
+    background-color: #0866FF;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    left: 35px;
+    bottom: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+/* other story cards styling */
+.other-stories {
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 170px;
+    position: relative;
+    border-radius: 10px;
+}
+/* div for bg image */
+.other-story-image {
+    width: 100%;
+    height: 100%;
+}
+
+.other-story-image>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.story-profile-pic {
+    width: 50px;
+    height: 50px;
+
+}
+
+.story-profile-pic>img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 5px solid #0866FF;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+
+}
+
+.other-stories>p {
+    color: black;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+/* post section styling */
+/* post section main div styling */
+.post-section {
+    height: 65vh;
+    width: 80%;
+    margin-top: 13px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: white;
+}
+
+/* post section head */
+.post-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post-head>.img-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.post-head>.img-name>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-name>div>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+.img-name>div>p {
+    font-size: 13px;
+    color: grey;
+}
+/* cross button styling */
+.post-close {
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: grey;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.post>img {
+    width: 80%;
+    height: 400px;
+}
+
+/* post section footer */
+.footer-icons>button {
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.footer-icons>button>i {
+    font-size: 20px;
+    color: #8F949A
+}
+/* Right Bar in Fb page */
+.right-bar {
+    flex: 1;
+    height: 100vh;
+    padding: 10px;
+}
+
+.right-bar>h3 {
+    color: grey;
+}
+
+.birthday-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.birthday-info>img {
+    width: 40px;
+}
+/* logout button */
+
+#logout{
+    width: 300px;
+    height: 50px;
+    font-size: 17px;
+    border: none;
+    margin-top: 20px;
+    background-color: #0866FF;
+    border-radius: 10px;
+    
+}
+#logout>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}

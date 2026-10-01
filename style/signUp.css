@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* form container */
+
+.container {
+    width: 35%;
+    padding: 10px;
+}
+
+
+/* back button and meta image styling box */
+.header-box {
+    width: 100%;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+
+}
+/* meta image */
+.header-box>img {
+    width: 80px;
+    height: 40px;
+}
+
+.header-box>p {
+    font-size: 15px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* first and last name input box */
+.complete-name {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.complete-name>input {
+    width: 49%;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+/* date of birth heading styling */
+.dob {
+    margin-top: 30px;
+}
+/* age selection box */
+.age-box {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.age-box>select {
+    height: 60px;
+    font-size: 16px;
+    width: 230px;
+    border-radius: 15px;
+    padding: 10px;
+    border-color: grey;
+}
+
+.gender-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-box>h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.gender-box>select {
+    height: 60px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-color: grey;
+
+}
+
+select:hover {
+    border: 1px solid black;
+}
+
+select:focus {
+    outline: none;
+}
+
+.gender-box>input {
+    height: 60px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+
+.gender-box>p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.gender-box>p>a {
+    color: #0064E0;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #0064E0;
+    color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+    color: rgba(247, 244, 244, 0.952);
+}
+
+.already-btn {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    background-color: rgba(163, 160, 160, 0.158);
+}
+
+.already-btn:hover {
+    background-color: rgba(163, 160, 160, 0.411);
+}
