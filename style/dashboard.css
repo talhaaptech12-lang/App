@@ -423,6 +423,7 @@ nav {
     border: none;
     cursor: pointer;
     margin-top: 5px;
+    background-color: white;
 }
 
 .footer-icons>button>i {
@@ -466,4 +467,44 @@ nav {
     color: white;
     font-weight: bold;
     
+}
+@media only screen and (max-width:1024px) {
+    .center-nav>button{
+        width: 100px;
+    }
+    
+    
+    .left-bar{
+        display: none;
+
+    }
+    
+    
+    .feeding-head {
+        width: 80%;
+    }
+    .feeding-head > input{
+        width: 350px;
+        margin-left: 5px;
+        font-size: 15px;
+        height: 40px;
+    }
+    .post-section{
+        height: 75vh;
+    }
+
+}
+@media only screen and (max-width:768px) {
+    .right-bar{
+        display: none;
+    }
+    .center-nav > button {
+        width: 70px;
+    }
+    .left-nav > input{
+        display: none;
+    } 
+    .hero-section{
+        padding: 60px 20px 10px 20px;
+    }
 }

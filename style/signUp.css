@@ -166,3 +166,8 @@ input:hover {
 .already-btn:hover {
     background-color: rgba(163, 160, 160, 0.411);
 }
+@media only screen and (max-width:1024px) {
+    .container {
+    width: 100%;
+}
+}
